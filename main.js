@@ -6,6 +6,8 @@ let priceButton = document.getElementById("buttonPrice");
 let nameButton = document.getElementById("buttonName");
 let relevanceButton = document.getElementById("buttonRelevance");
 
+let sort = document.getElementById("sortBy");
+
 
 
 priceButton.addEventListener("click", ()=>{
@@ -26,5 +28,30 @@ nameButton.addEventListener("click", ()=>{
   priceButton.style.backgroundColor="white";
   relevanceButton.style.backgroundColor="white";
 });
+
+
+
+sort.addEventListener("change", ()=>{
+  if (sort.value == "price") {
+
+    priceButton.style.backgroundColor="deepskyblue";
+    nameButton.style.backgroundColor="white";
+    relevanceButton.style.backgroundColor="white";
+
+  } else if (sort.value == "name") {
+
+    priceButton.style.backgroundColor="white";
+    nameButton.style.backgroundColor="deepskyblue";
+    relevanceButton.style.backgroundColor="white";
+
+  } else if (sort.value == "relevance") {
+
+    priceButton.style.backgroundColor="white";
+    nameButton.style.backgroundColor="white";
+    relevanceButton.style.backgroundColor="deepskyblue";
+    
+  }
+});
+
 
 
