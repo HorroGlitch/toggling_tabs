@@ -1,0 +1,36 @@
+body{
+  background-color:deepskyblue;
+  margin: 0px;
+}
+
+#buttonSelect{
+  display: none;
+}
+
+#containerSelect{
+  width: 90% ;
+  height: 60px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 5%;
+  margin-top: 60%;
+}
+
+#sortBy{
+  display: block;
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: solid 2px lightseagreen;
+}
+
+@media (min-width:750px) {
+  #containerSelect{
+    display: none;
+  }
+
+  #buttonSelect{
+    display: block;
+    margin: 50%;
+  }
+}
